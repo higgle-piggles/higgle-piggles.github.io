@@ -7,9 +7,6 @@ h1 {
     text-align: center;
     color: #1971c2;
 } 
-nav {
-    background-color: #f5fbff ;
-}
 h3 {
     text-align: center;
     color:#135592
@@ -18,4 +15,16 @@ p {
     text-align: center;
     color:#135592;
     font-size:large;
+}
+ul {
+    text-align: center;
+}
+nav {
+    background-color: rgb(252, 252, 252);
+}
+section {
+    background-image: url(https://i.pinimg.com/736x/e0/ff/c8/e0ffc887626a84c0cf6e63de1099a598.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
