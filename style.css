@@ -34,11 +34,12 @@ button {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
-    color: rgb(171, 198, 248);
+    color: rgb(31, 49, 82);
     border-color:#fff;
     font-size: 30px;
     margin-left: 2rem;
     border-radius: 1rem;
+    
 }
 img {
     margin-left: 750px;
