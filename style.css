@@ -47,3 +47,16 @@ img {
     
 }
 
+.questionButton {
+
+     font-family: sans-serif;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    color: rgb(31, 49, 82);
+    border-color:#fff;
+    font-size: 30px;
+    margin-left: 2rem;
+    border-radius: 1rem;
+}
