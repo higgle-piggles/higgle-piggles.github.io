@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second question</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <link>
     <nav>
     <ul>
     
@@ -18,20 +20,24 @@
 
     <h1>What is an organism gentoype?</h1>
     <h3>2/20</h3>
-    <button>
-        <a href="3rdq.html">Next</a>
+    <button >
+        <a href="3rdq.html" style="text-decoration: none; color: #fff;">Next</a>
     </button>
 
     <button>
-        <a href="firstq.html">Previous</a>
+        <a href="firstq.html" style="text-decoration: none; color: #fff;">Previous</a>
     </button>
 
 </head>
 <body>
+
+<div class="button-layout">
     <button class="questionButton" onclick="checkQuestion('correct')">1. The observable characteristics possesed by the organism</button>
     <button class="questionButton" onclick="checkQuestion('incorrect')">2. The total number of genes in an organism</button>
     <button class="questionButton" onclick="checkQuestion('incorrect')">3. The particular alleles possesed by an organism</button>
     <button class="questionButton" onclick="checkQuestion('incorrect')">4.The number of genes within a chromosome</button>
+</div>
+    <h4 id="answer1"></h4>
     
 </body>
 </html>
