@@ -22,23 +22,25 @@
     <h1>1. What is a trait?</h1>
     <h3>1/20 </h3>
 
-     <button>
+
+     <button id="next">
         <a href="2cndq.html" style="text-decoration: none; color: #fff;">Next</a>
     </button>
 
-    <button>
+    <button id="previous">
         <a href="firstq.html" style="text-decoration: none; color: #fff;">Previous</a>
     </button>
 
 
 </head>
 <body>
- <div class="button-layout">
-    <button class="questionButton"  onclick="checkQuestion1('correct')">1. It determines the excat order of bases which make up an organisms genetic code </button>
-    <button class="questionButton"  onclick="checkQuestion1('incorrect')">2. A strand of DNA and protien</button>
-    <button class="questionButton"  onclick="checkQuestion1('incorrect')">3. A complete set of chromosomes</button>
-    <button class="questionButton"  onclick="checkQuestion1('incorrect')">4. A genetically determined trait</button>
-</div> 
-    <h4 id="answer1"></h4>
+
+    <button class="questionButton"  onclick="checkQuestion('correct')">1. It determines the excat order of bases which make up an organisms genetic code </button>
+    <button class="questionButton"  onclick="checkQuestion('incorrect')">2. A strand of DNA and protien</button>
+    <button class="questionButton"  onclick="checkQuestion('incorrect')">3. A complete set of chromosomes</button>
+    <button class="questionButton"  onclick="checkQuestion('incorrect')">4. A genetically determined trait</button>
+
+    <h4 id="answer"></h4>
+    <script src="scripts.js"></script>
 </body>
 </html>

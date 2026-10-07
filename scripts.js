@@ -1,3 +1,4 @@
+
 function checkQuestion1(answer) {
     if (answer == 'correct'){
         document.getElementById('answer1').innerHTML = "Correct"
