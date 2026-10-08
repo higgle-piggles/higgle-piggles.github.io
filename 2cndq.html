@@ -3,41 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second question</title>
+    <title>Second Question</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
-    <link>
-    <nav>
-    <ul>
-    
-        <a href="index.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-right: 50px;">Home</a>
-        <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none; ""> Resource</a>
-        <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;;">Quiz</a>
-
-        
-    </ul>
-</nav>
-
-    <h1>What is an organism gentoype?</h1>
-    <h3>2/20</h3>
-    <button >
-        <a href="3rdq.html" style="text-decoration: none; color: #fff;">Next</a>
-    </button>
-
-    <button>
-        <a href="firstq.html" style="text-decoration: none; color: #fff;">Previous</a>
-    </button>
-
 </head>
 <body>
+    <nav>
+        <ul>
+            <a href="index.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-right: 50px;">Home</a>
+            <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none;">Resource</a>
+            <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;">Quiz</a>
+        </ul>
+    </nav>
 
-<div class="button-layout">
-    <button class="questionButton" >1. The observable characteristics possesed by the organism</button>
-    <button class="questionButton" >2. The total number of genes in an organism</button>
-    <button class="questionButton" value="3. The particular alleles possesed by an organism">3. The particular alleles possesed by an organism</button>
-    <button class="questionButton">4.The number of genes within a chromosome</button>
-</div>
-    <h4 id="answer"></h4>
-     <script src="scripts.js"></script>
+    <h1>2. What is an organism's genotype?</h1>
+    <h3>2/20</h3>
+    
+    <div style="margin-top: 20px;">
+        <button id="previous">
+            <a href="firstq.html" style="text-decoration: none; color: #fff;">Previous</a>
+        </button>
+        <button id="next">
+            <a href="3rdq.html" style="text-decoration: none; color: #fff;">Next</a>
+        </button>
+    </div>
+
+
+    <div class="question-container button-layout">
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">1. The observable characteristics possessed by the organism</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">2. The total number of genes in an organism</button>
+        <button class="questionButton" onclick="checkQuestion('correct', this)">3. The particular alleles possessed by an organism</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">4. The number of genes within a chromosome</button>
+
+        <h4 class="answer-feedback"></h4>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

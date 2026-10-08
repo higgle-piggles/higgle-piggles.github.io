@@ -3,44 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1</title>
+    <title>Question 1</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
-    <link>
-    <nav>
-    <ul>
-    
-        <a href="index.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-right: 50px;">Home</a>
-        <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none; ""> Resource</a>
-        <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;;">Quiz</a>
-
-        
-    </ul>
-</nav>
-
-
-    <h1>1. What is a trait?</h1>
-    <h3>1/20 </h3>
-
-
-     <button id="next">
-        <a href="2cndq.html" style="text-decoration: none; color: #fff;">Next</a>
-    </button>
-
-    <button id="previous">
-        <a href="firstq.html" style="text-decoration: none; color: #fff;">Previous</a>
-    </button>
-
-
 </head>
 <body>
 
-    <button class="questionButton"  onclick="checkQuestion('correct')">1. It determines the excat order of bases which make up an organisms genetic code </button>
-    <button class="questionButton"  onclick="checkQuestion('incorrect')">2. A strand of DNA and protien</button>
-    <button class="questionButton"  onclick="checkQuestion('incorrect')">3. A complete set of chromosomes</button>
-    <button class="questionButton"  onclick="checkQuestion('incorrect')">4. A genetically determined trait</button>
+    <nav>
+        <ul>
+            <a href="index.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-right: 50px;">Home</a>
+            <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none;">Resource</a>
+            <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;">Quiz</a>
+        </ul>
+    </nav>
 
-    <h4 id="answer"></h4>
+    <h1>1. What is a trait?</h1>
+    <h3>1/20</h3>
+     <div style="margin-top: 20px;">
+        <button id="previous">
+            <a href="firstq.html" style="text-decoration: none; color: #fff;">Previous</a>
+        </button>
+        <button id="next">
+            <a href="2cndq.html" style="text-decoration: none; color: #fff;">Next</a>
+        </button>
+    </div>
+
+
+<div class="question-container">
+    <button class="questionButton" onclick="checkQuestion('correct', this)">1. It determines the exact order of bases...</button>
+    <button class="questionButton" onclick="checkQuestion('incorrect', this)">2. A strand of DNA and protein</button>
+    <button class="questionButton" onclick="checkQuestion('incorrect', this)">3. A complete set of chromosomes</button>
+    <button class="questionButton" onclick="checkQuestion('incorrect', this)">4. A genetically determined trait</button>
+
+    
+    <h4 class="answer-feedback"></h4>
+</div>
+
     <script src="scripts.js"></script>
 </body>
 </html>

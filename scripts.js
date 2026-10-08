@@ -1,18 +1,19 @@
-
-function checkQuestion1(answer) {
-    if (answer == 'correct'){
-        document.getElementById('answer1').innerHTML = "Correct"
-  
+function checkQuestion(userSelection, clickedButton) {
+    const feedbackElement = clickedButton.parentElement.querySelector('.answer-feedback');
+    
+    if (userSelection === 'correct') {
+        feedbackElement.innerHTML = "Correct!";
+        feedbackElement.style.color = "green";
     } else {
-        document.getElementById('answer1').innerHTML = "Incorrect"
+        feedbackElement.innerHTML = "Incorrect.";
+        feedbackElement.style.color = "red";
     }
     
-    const buttons = document.querySelectorAll('.questionButton');
+    const questionContainer = clickedButton.parentElement;
+    const buttons = questionContainer.querySelectorAll('.questionButton');
 
     buttons.forEach(button => {
-        button.disabled =true;
-
+        button.disabled = true;
         button.classList.add('disabledButton');
-    } );
-
+    });
 }
