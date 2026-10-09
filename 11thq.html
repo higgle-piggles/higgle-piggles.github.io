@@ -3,37 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>11</title>
-       <link rel="stylesheet" href="style.css">
-    <nav>
-    <ul>
-    
-        <a href="index.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-right: 50px;">Home</a>
-        <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none; ""> Resource</a>
-        <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;;">Quiz</a>
-
-        
-    </ul>
-</nav>
-
- <h1> What is a gene?</h1>
-    <h3>11/20</h3>
-
-<button>
-        <a href="12thq.html" style="text-decoration: none; color: #fff;">Next</a>
-    </button>
-
-    <button>
-        <a href="10thq.html" style="text-decoration: none; color: #fff;">Previous</a>
-</button>
-
+    <title>Eleventh Question</title>
+    <link rel="stylesheet" href="style.css">
+     <nav>
+        <ul>
+            <a href="index.html" style="font-family: sans-serif; color:#000000; text-decoration: none; margin-right: 50px;">Home</a>
+            <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none;">Resource</a>
+            <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;">Quiz</a>
+        </ul>
+    </nav>
+     <div class="nxt-container" style="margin-top: 20px;">
+        <button id="next">
+            <a href="12thq.html" style="text-decoration: none; color:  #000000;;">Next</a>
+        </button>
+    </div>
 </head>
 <body>
-<div class="button-layout">
-    <button class="questionButton" onclick="checkQuestion('correct')"> 1. An alternate version of a allele </button>
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 2. A short sequence of DNA that codes for a trait/characteristic</button>
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 3. Observable trait of an organisim</button>
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 4. It is a combination of somatic, amino acids and reproductive cells </button>
-</div>
+
+    <h1>What is a gene?</h1>
+
+    <div class="question-container button-layout">
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">1. An alternate version of an allele</button>
+        <button class="questionButton" onclick="checkQuestion('correct', this)">2. A short sequence of DNA that codes for a trait/characteristic</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">3. Observable trait of an organism</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">4. It is a combination of somatic, amino acids, and reproductive cells</button>
+
+        <h4 class="answer-feedback"></h4>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

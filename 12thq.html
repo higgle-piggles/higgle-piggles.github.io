@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12</title>
-      <link rel="stylesheet" href="style.css">
-    <nav>
-    <ul>
-    
-        <a href="index.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-right: 50px;">Home</a>
-        <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none; "> Resource</a>
-        <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;;">Quiz</a>
-
-        
-    </ul>
-</nav>
-
- <h1> What is a carrier of a recessive?</h1>
-    <h3>12/20</h3>
-
-<button>
-        <a href="13thq.html" style="text-decoration: none; color: #fff;">Next</a>
-    </button>
-
-    <button>
-        <a href="11thq.html" style="text-decoration: none; color: #fff;">Previous</a>
-</button>
+    <title>Twelfth Question</title>
+    <link rel="stylesheet" href="style.css">
+     <nav>
+        <ul>
+            <a href="index.html" style="font-family: sans-serif; color:#000000; text-decoration: none; margin-right: 50px;">Home</a>
+            <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none;">Resource</a>
+            <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;">Quiz</a>
+        </ul>
+    </nav>
+     <div class="nxt-container" style="margin-top: 20px;">
+        <button id="next">
+            <a href="13thq.html" style="text-decoration: none; color:  #000000;;">Next</a>
+        </button>
+    </div>
 </head>
 <body>
-<div class="button-layout">
-<button class="questionButton" onclick="checkQuestion('incorrect')"> 1. An individual who has two dominant alleles</button>
-<button class="questionButton" onclick="checkQuestion('incorrect')"> 2. An individual who expresses a recessive trait with one allele</button>
-<button class="questionButton" onclick="checkQuestion('incorrect')"> 3. An individual who has only dominant alleles</button>
-<button class="questionButton" onclick="checkQuestion('correct')"> 4. An individual who carries a recessive allele but does not express that trait</button>
-</div>
+
+    <h1>What is a carrier of a recessive trait?</h1>
+
+    <div class="question-container button-layout">
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">1. An individual who has two dominant alleles</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">2. An individual who expresses a recessive trait with one allele</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">3. An individual who has only dominant alleles</button>
+        <button class="questionButton" onclick="checkQuestion('correct', this)">4. An individual who carries a recessive allele but does not express that trait</button>
+
+        <h4 class="answer-feedback"></h4>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

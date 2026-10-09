@@ -3,39 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5</title>
-     <link rel="stylesheet" href="style.css">
+    <title>Fifth Question</title>
+    <link rel="stylesheet" href="style.css">
      <nav>
-    <ul>
-    
-        <a href="index.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-right: 50px;">Home</a>
-        <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none; ""> Resource</a>
-        <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;;">Quiz</a>
-
-        
-    </ul>
-</nav>
-
-    <h1>What is the result of meosis?</h1>
-    <h3>5/20</h3>
-
- <button>
-        <a href="6thq.html" style="text-decoration: none; color: #fff;">Next</a>
-    </button>
-
-    <button>
-        <a href="4thq.html" style="text-decoration: none; color: #fff;">Previous</a>
-</button>
-
-
+        <ul>
+            <a href="index.html" style="font-family: sans-serif; color:#000000; text-decoration: none; margin-right: 50px;">Home</a>
+            <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none;">Resource</a>
+            <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;">Quiz</a>
+        </ul>
+    </nav>
+     <div class="nxt-container" style="margin-top: 20px;">
+        <button id="next">
+            <a href="6thq.html" style="text-decoration: none; color:  #000000;;">Next</a>
+        </button>
+    </div>
 </head>
-
 <body>
-<div class="button-layout">
-<button class="questionButton" onclick="checkQuestion('incorrect')">Two genetically different cells</button>
-<button class="questionButton" onclick="checkQuestion('correct')">Four genetically identical cells</button>
-<button class="questionButton" onclick="checkQuestion('incorrect')">Two identical cells</button>
-<button class="questionButton" onclick="checkQuestion('incorrect')">Four genetically different cells</button>
-</div>
+
+
+    <h1>What is the result of meiosis?</h1>
+   
+
+    <div class="question-container button-layout">
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">1. Two genetically different cells</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">2. Four genetically identical cells</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">3. Two identical cells</button>
+        <button class="questionButton" onclick="checkQuestion('correct', this)">4. Four genetically different cells</button>
+
+        <h4 class="answer-feedback"></h4>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

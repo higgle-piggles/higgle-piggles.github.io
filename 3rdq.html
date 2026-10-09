@@ -3,36 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Third question</title>
+    <title>Third Question</title>
     <link rel="stylesheet" href="style.css">
-<nav>
-    <ul>
-    
-        <a href="index.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-right: 50px;">Home</a>
-        <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none; ""> Resource</a>
-        <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;;">Quiz</a>
-
-        
-    </ul>
-</nav>
-
-<h1>What is a recessive allele?</h1>
-<h3>3/20</h3>
-  <button>
-        <a href="4thq.html" style="text-decoration: none; color: #fff;">Next</a>
-    </button>
-
-    <button>
-        <a href="2cndq.html" style="text-decoration: none; color: #fff;">Previous</a>
-    </button>
+     <nav>
+        <ul>
+            <a href="index.html" style="font-family: sans-serif; color:#000000; text-decoration: none; margin-right: 50px;">Home</a>
+            <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none;">Resource</a>
+            <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;">Quiz</a>
+        </ul>
+    </nav>
+     <div class="nxt-container" style="margin-top: 20px;">
+        <button id="next">
+            <a href="4thq.html" style="text-decoration: none; color:  #000000;;">Next</a>
+        </button>
+    </div>
 </head>
-
 <body>
-<div class="button-layout">
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 1. The particular alleles found in the Y chromosomes </button>
-    <button class="questionButton" onclick="checkQuestion('correct')"> 2. An allele that is only expressed when two copies are present </button>
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 3. An allele that is only expressed when one copy is present </button>
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 4. An allele that is the most popular within in a population </button>
-</div>
+
+    <h1> What is a recessive allele?</h1>
+
+   
+    <div class="question-container button-layout">
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">1. The particular alleles found in the Y chromosomes</button>
+        <button class="questionButton" onclick="checkQuestion('correct', this)">2. An allele that is only expressed when two copies are present</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">3. An allele that is only expressed when one copy is present</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">4. An allele that is the most popular within a population</button>
+
+        <h4 class="answer-feedback"></h4>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

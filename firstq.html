@@ -5,34 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question 1</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <nav>
+     <nav>
         <ul>
-            <a href="index.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-right: 50px;">Home</a>
+            <a href="index.html" style="font-family: sans-serif; color:#000000; text-decoration: none; margin-right: 50px;">Home</a>
             <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none;">Resource</a>
             <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;">Quiz</a>
         </ul>
     </nav>
-
-    <h1>1. What is a trait?</h1>
-    <h3>1/20</h3>
-     <div style="margin-top: 20px;">
-        <button id="previous">
-            <a href="firstq.html" style="text-decoration: none; color: #fff;">Previous</a>
-        </button>
+     <div class="nxt-container" style="margin-top: 20px;">
         <button id="next">
-            <a href="2cndq.html" style="text-decoration: none; color: #fff;">Next</a>
+            <a href="2cndq.html" style="text-decoration: none; color:  #000000;;">Next</a>
         </button>
     </div>
+</head>
+<body>
 
 
+    <h1>What is a trait?</h1>
+   
 <div class="question-container">
-    <button class="questionButton" onclick="checkQuestion('correct', this)">1. It determines the exact order of bases...</button>
+    <button class="questionButton" onclick="checkQuestion('incorrect', this)">1. It determines the exact order of bases in a strand of DNA</button>
     <button class="questionButton" onclick="checkQuestion('incorrect', this)">2. A strand of DNA and protein</button>
     <button class="questionButton" onclick="checkQuestion('incorrect', this)">3. A complete set of chromosomes</button>
-    <button class="questionButton" onclick="checkQuestion('incorrect', this)">4. A genetically determined trait</button>
+    <button class="questionButton" onclick="checkQuestion('correct', this)">4. A genetically determined trait</button>
 
     
     <h4 class="answer-feedback"></h4>

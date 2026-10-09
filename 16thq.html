@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>16</title>
-     <link rel="stylesheet" href="style.css">
-    <nav>
-    <ul>
-    
-        <a href="index.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-right: 50px;">Home</a>
-        <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none; "> Resource</a>
-        <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;;">Quiz</a>
-
-        
-    </ul>
-</nav>
-
- <h1> What is the main purpose of DNA in an organism? </h1>
-    <h3>16/20</h3>
-
-<button>
-        <a href="17thq.html" style="text-decoration: none; color: #fff;">Next</a>
-    </button>
-
-    <button>
-        <a href="15hq.html" style="text-decoration: none; color: #fff;">Previous</a>
-    </button>
+    <title>Sixteenth Question</title>
+    <link rel="stylesheet" href="style.css">
+     <nav>
+        <ul>
+            <a href="index.html" style="font-family: sans-serif; color:#000000; text-decoration: none; margin-right: 50px;">Home</a>
+            <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none;">Resource</a>
+            <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;">Quiz</a>
+        </ul>
+    </nav>
+         <div class="nxt-container" style="margin-top: 20px;">
+        <button id="next">
+            <a href="17thq.html" style="text-decoration: none; color:  #000000;;">Next</a>
+        </button>
+    </div>
 </head>
 <body>
 
-    <button class="questionButton" onclick="checkQuestion('correct')"> 1. To carry the genetic code for the next generation and help determine the phenotype</button>
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 2. To provide immediate energy for muscle contraction</button>
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 3. To tranpsort oxygen through the bloodstream</button>
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 4. To help rewire and repair an individuals tissue when damaged</button>
-    
+
+    <h1> What is the main purpose of DNA in an organism?</h1>
+
+
+    <div class="question-container button-layout">
+        <button class="questionButton" onclick="checkQuestion('correct', this)">1. To carry the genetic code for the next generation and help determine the phenotype</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">2. To provide immediate energy for muscle contraction</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">3. To transport oxygen through the bloodstream</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">4. To help rewire and repair an individual's tissue when damaged</button>
+
+        <h4 class="answer-feedback"></h4>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -3,34 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>17</title>
-         <link rel="stylesheet" href="style.css">
+    <title>Seventeenth Question</title>
+    <link rel="stylesheet" href="style.css">
     <nav>
-    <ul>
-    
-        <a href="index.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-right: 50px;">Home</a>
-        <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none; "> Resource</a>
-        <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;;">Quiz</a>
-
-        
-    </ul>
-</nav>
-
- <h1> Which process is specifically identified as responsible for forming new alleles? </h1>
-    <h3>17/20</h3>
-
-<button>
-        <a href="18thq.html" style="text-decoration: none; color: #fff;">Next</a>
-    </button>
-
-    <button>
-        <a href="16hq.html" style="text-decoration: none; color: #fff;">Previous</a>
-    </button>
+        <ul>
+            <a href="index.html" style="font-family: sans-serif; color:#000000; text-decoration: none; margin-right: 50px;">Home</a>
+            <a href="resource.html" style="font-family: sans-serif; color: black; text-decoration: none;">Resource</a>
+            <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;">Quiz</a>
+        </ul>
+    </nav>
+         <div class="nxt-container" style="margin-top: 20px;">
+        <button id="next">
+            <a href="18thq.html" style="text-decoration: none; color:  #000000;;">Next</a>
+        </button>
+    </div>
 </head>
 <body>
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 1. Mitosis</button>
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 2 .Meosis</button>
-    <button class="questionButton" onclick="checkQuestion('incorrect')"> 3. Independent assortment</button>
-    <button class="questionButton" onclick="checkQuestion('correct')"> 4. Mutation</button>
+    <h1> Which process is specifically identified as responsible for forming new alleles?</h1>
+
+    <div class="question-container button-layout">
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">1. Mitosis</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">2. Meiosis</button>
+        <button class="questionButton" onclick="checkQuestion('incorrect', this)">3. Independent assortment</button>
+        <button class="questionButton" onclick="checkQuestion('correct', this)">4. Mutation</button>
+
+        <h4 class="answer-feedback"></h4>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
