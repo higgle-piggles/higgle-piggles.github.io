@@ -11,7 +11,7 @@ function checkQuestion(userSelection, clickedButton) {
     let answeredQuestions = JSON.parse(localStorage.getItem('answeredQuestions')) || [];
     const alreadyAnswered = answeredQuestions.includes(pageIdentifier);
     
-    // Track stats silently behind the scenes
+   
     if (userSelection === 'correct') {
         if (!alreadyAnswered) {
             let correctCount = parseInt(localStorage.getItem('quizCorrect')) || 0;
@@ -31,7 +31,7 @@ function checkQuestion(userSelection, clickedButton) {
         localStorage.setItem('answeredQuestions', JSON.stringify(answeredQuestions));
     }
 
-    // Dynamic button colour changes
+   
     const questionContainer = clickedButton.parentElement;
     const buttons = questionContainer.querySelectorAll('.questionButton');
 
