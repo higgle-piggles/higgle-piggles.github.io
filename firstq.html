@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tells user what question number they're on-->
     <title>Question 1</title>
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js"></script>
+    <!--This is the navigation for users to click and go to different pages on the website-->
      <nav>
         <ul>
             <a href="index.html" style="font-family: sans-serif; color:#000000; text-decoration: none; margin-right: 50px;">Home</a>
@@ -13,6 +15,7 @@
             <a href="quizPage.html" style="font-family: sans-serif; color: black; text-decoration: none; margin-left: 50px;">Quiz</a>
         </ul>
     </nav>
+    <!--This is a button wrapped in a div for css purposes, and it is the next button to take the user to the next page-->
      <div class="nxt-container" style="margin-top: 20px;">
         <button id="next">
             <a href="2cndq.html" style="text-decoration: none; color:  #000000;;">Next</a>
@@ -21,16 +24,14 @@
 </head>
 <body>
 
-
+<!--The title of the question in the biggest font so it's easy to see-->
     <h1>What is a trait?</h1>
-   
+<!--Each answers is layed out as a button and has inline javascript to tell vscode what answer is correct-->
 <div class="question-container">
     <button class="questionButton" onclick="checkQuestion('incorrect', this)">1. It determines the exact order of bases in a strand of DNA</button>
     <button class="questionButton" onclick="checkQuestion('incorrect', this)">2. A strand of DNA and protein</button>
     <button class="questionButton" onclick="checkQuestion('incorrect', this)">3. A complete set of chromosomes</button>
     <button class="questionButton" onclick="checkQuestion('correct', this)">4. A genetically determined characteristic</button>
-
-    
     <h4 class="answer-feedback"></h4>
 </div>
 

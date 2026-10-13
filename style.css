@@ -1,3 +1,8 @@
+/* * {
+    margin: 0;
+    box-sizing: border-box;
+} */
+
 nav {
     background-color: #fff ;
     border-color: aqua;
@@ -42,6 +47,7 @@ h3 {
 body {
   background: #020024;
 background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%); 
+    margin: 0;
 }
 button {
     font-family: sans-serif;
@@ -112,7 +118,7 @@ footer {
 h5 {
     color
 }
-#hero-image {
-    position: relative;
-    top: -40px;
+
+footer {
+    background-color: #fff;
 }
