@@ -1,14 +1,14 @@
 let score = 0
 
-
-function checkQuestion1(answer, button) {
+function checkQuestion(answer, button) {
+    console.log('sanity check')
     if (answer == 'correct'){
-        document.getElementById('answer1').innerHTML = "Correct"
+        document.getElementById('answer1').innerHTML = "correct"
         button.classList.add(red)
         score += 1
   
     } else {
-        document.getElementById('answer1').innerHTML = "Incorrect"
+        document.getElementById('answer1').innerHTML = "incorrect"
     }
     
     const buttons = document.querySelectorAll('.questionButton');
@@ -22,6 +22,7 @@ function checkQuestion1(answer, button) {
 }
 
 function getScore(){
+    document.getElementById('final-score')
     // get score element
     // change inner html to score
 }

@@ -6,7 +6,7 @@
     <!--Tells user what question number they're on-->
     <title>Question 1</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    <script src="temp.js"></script>
     <!--This is the navigation for users to click and go to different pages on the website-->
      <nav>
         <ul>
@@ -28,12 +28,14 @@
     <h1>What is a trait?</h1>
 <!--Each answers is layed out as a button and has inline javascript to tell vscode what answer is correct-->
 <div class="question-container">
-    <button class="questionButton" onclick="checkQuestion('incorrect', this)">1. It determines the exact order of bases in a strand of DNA</button>
-    <button class="questionButton" onclick="checkQuestion('incorrect', this)">2. A strand of DNA and protein</button>
-    <button class="questionButton" onclick="checkQuestion('incorrect', this)">3. A complete set of chromosomes</button>
-    <button class="questionButton" onclick="checkQuestion('correct', this)">4. A genetically determined characteristic</button>
-    <h4 class="answer-feedback"></h4>
+    <button class="questionButton" onclick="checkQuestion('incorrect')">1. It determines the exact order of bases in a strand of DNA</button>
+    <button class="questionButton" onclick="checkQuestion('incorrect')">2. A strand of DNA and protein</button>
+    <button class="questionButton" onclick="checkQuestion('incorrect')">3. A complete set of chromosomes</button>
+    <button class="questionButton" onclick="checkQuestion('correct')">4. A genetically determined characteristic</button>
+    <h4 id="answer1"></h4>
 </div>
-
+<footer>
+    <h2>1/20</h2>
+</footer>
 </body>
 </html>
