@@ -120,6 +120,11 @@ h5 {
 }
 
 footer {
-    background-color: #fff;
-    opacity: 0.5s;
+    background-color:#fff;
+}
+h4{
+    color:#6ec5ed;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: larger;
 }
