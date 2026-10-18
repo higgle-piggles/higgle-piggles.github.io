@@ -1,4 +1,4 @@
-let score = 0
+
 
 function checkQuestion(answer, button) {
     console.log('sanity check')
@@ -21,8 +21,7 @@ function checkQuestion(answer, button) {
 
 }
 
-function getScore(){
-    document.getElementById('final-score')
+
+document.getElementById('final-score').innerHTML = "final-score"
     // get score element
     // change inner html to score
-}

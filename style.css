@@ -113,18 +113,15 @@ footer {
      padding-top: 1rem;
       padding-right: 1rem;
        padding-left: 1rem;
-    
+    text-align:center;    
 }
 h5 {
     color
 }
 
-footer {
-    background-color:#fff;
-}
 h4{
     color:#6ec5ed;
     font-family: sans-serif;
     text-align: center;
-    font-size: larger;
+    font-size: 2rem;
 }
