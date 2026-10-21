@@ -25,7 +25,7 @@ h1{
      font-family: sans-serif;
     color: rgb(250, 250, 250);
     font-size: 5rem;
-    margin-right: 900px;
+    text-align: center;
 }
 h3 {
     text-align: center;
@@ -37,12 +37,18 @@ h3 {
 }
 #welcome-p {
     font-family: sans-serif;
-    color: rgb(250, 250, 250);
+    color:  #193e76;
     font-size: 1rem;
-    margin-right: 5rem;
+    text-align: center;
     text-decoration: none;
-    margin-right: 800px;
-    font-size: 20px;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#box{
+    background-color:#b7f4ff;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 body {
   background: #020024;
@@ -55,9 +61,7 @@ button {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
-
     font-size: 30px;
-    margin-left: 2rem;
     border-radius: 1rem;
     background-color: #fff;
 }
@@ -124,4 +128,10 @@ h4{
     font-family: sans-serif;
     text-align: center;
     font-size: 2rem;
+}
+#start-btn{
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100px;   
 }
